@@ -28,16 +28,19 @@ class HealthMonitoringApp extends StatelessWidget {
             Container(
                 child: Row(
                   children: [
-                    Icon(Icons.computer, size: 40, color: Colors.black87),
                     SizedBox(
-                      width: 10,
+                      width: 28,
+                    ),
+                    Icon(Icons.computer, size: 40, color: Colors.black),
+                    SizedBox(
+                      width: 30,
                     ),
                     Text(
                       'Evaluation Report',
                       style: TextStyle(
                         fontFamily: 'Pacifico',
                         fontSize: 25.0,
-                        color: Color(0xff131010),
+                        color: Colors.indigo[900],
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -85,14 +88,14 @@ class HealthMonitoringApp extends StatelessWidget {
               child: ListTile(
                 leading: Icon(
                   Icons.line_weight,
-                  color: Color(0xff262727),
+                  color: Colors.purple
                 ),
                 title: Text(
-                  'weight: 80 Kg',
+                  'Weight - 80 Kg',
                   style: TextStyle(
                     color: Color(0xff262727),
                     fontFamily: 'Pacifico',
-                    fontSize: 15.0,
+                    fontSize: 17.0,
                   ),
                 ),
               ),
@@ -111,14 +114,14 @@ class HealthMonitoringApp extends StatelessWidget {
               child: ListTile(
                 leading: Icon(
                   Icons.directions_walk,
-                  color: Color(0xff262727),
+                  color: Colors.green,
                 ),
                 title: Text(
-                  'Steps: 395',
+                  'Steps - 395',
                   style: TextStyle(
                     color: Color(0xff262727),
                     fontFamily: 'Source Sans Pro',
-                    fontSize: 15,
+                    fontSize: 17,
                   ),
                 ),
               ),
@@ -136,14 +139,14 @@ class HealthMonitoringApp extends StatelessWidget {
               child: ListTile(
                 leading: Icon(
                   Icons.favorite,
-                  color: Color(0xff262727),
+                  color: Colors.pink,
                 ),
                 title: Text(
-                  'Heart Rate: 80 BPM',
+                  'Heart Rate - 80 BPM',
                   style: TextStyle(
                     color: Color(0xff262727),
                     fontFamily: 'Source Sans Pro',
-                    fontSize: 15.0,
+                    fontSize: 17,
                   ),
                 ),
               ),
@@ -155,14 +158,14 @@ class HealthMonitoringApp extends StatelessWidget {
               child: ListTile(
                 leading: Icon(
                   Icons.ac_unit,
-                  color: Color(0xff262727),
+                  color: Colors.blue,
                 ),
                 title: Text(
-                  'Body Temperature: 98.6°F',
+                  'Body Temperature - 98.6°F',
                   style: TextStyle(
                     color: Color(0xff262727),
                     fontFamily: 'Source Sans Pro',
-                    fontSize: 15.0,
+                    fontSize: 17.0,
                   ),
                 ),
               ),
@@ -173,14 +176,14 @@ class HealthMonitoringApp extends StatelessWidget {
               child: ListTile(
                 leading: Icon(
                   Icons.insert_chart,
-                  color: Color(0xff262727),
+                  color: Colors.red,
                 ),
                 title: Text(
-                  'Blood Pressure: 120/80 mmHg',
+                  'Blood Pressure - 120/80 mmHg',
                   style: TextStyle(
                     color: Color(0xff262727),
                     fontFamily: 'Source Sans Pro',
-                    fontSize: 15.0,
+                    fontSize: 17.0,
                   ),
                 ),
               ),
@@ -194,4 +197,3 @@ class HealthMonitoringApp extends StatelessWidget {
     // );
   }
 }
-
